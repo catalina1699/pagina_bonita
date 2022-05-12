@@ -42,29 +42,56 @@
                 <div class="row">
                     <div class="col-md-6 mx-auto">
 
-                        <p class="primero">Volcanic eruptions tend to evoke images of flowing molten lava and giant ash plumes, but when an underwater volcano off Tonga began a major eruption on Jan. 13, it was accompanied by one of the largest volcanic lightning events ever recorded</p>
+                        <p class="primero">Hate crimes are a prejudice-motivated crime which occurs when a perpetrator targets a victim because of their membership (or perceived membership) of a certain social group or racial demographic.</p>
 
-                        <p>The surrounding islands in the Tonga archipelago in the South Pacific Ocean were completely engulfed in lightning at various stages of the eruption which lasted days.</p>
+                        <p>New york is a very diverse city, people from diferent ethnicities, sexual orientation, genre, and religious beliefs coexits in this space, but that coexistence is not always peaceful.</p>
 
-                        <p>“I can’t imagine what the people on the islands would have been going through, with a huge ash cloud overhead, a tsunami flooding everything they own, and cloud-to-ground lightning coming down around them. It must have felt apocalyptic.” said Chris Vagasky, a meteorologist at Vaisala, a Finland-based environmental technology company.</p>
+                        <p>In the theme of sexual diversity, of the total population of NYC a total of 570,000 self-identify as gay or bisexual. </p>
 
-                        <p>The Hunga Tonga-Hunga Ha'apai volcanic island lies about 65 km (40 miles) north of Nuku'alofa, the capital of Tonga. Scientists said the volcano – which last experienced a major eruption in 2014 – had been puffing away for about a month before a series of blasts began on Jan. 13. Rising magma, superheated to around 1,000 degrees Celsius (1,832 Fahrenheit), then met with 20 degree (68 Fahrenheit) seawater on Jan. 15, causing an instantaneous and massive explosion.</p>
+                        <p>Tambien hay una comunidad de personas transgenero muy numerosa y activa, aqui es donde la protesta de stonewall tomo lugar</p>
 
-                        <p>Scientists are still studying the behaviour of the lightning. “One of the things that I’m really interested in looking at is the wave pattern in the lightning. As the eruption plume hit the stratosphere and spread outward, it appears to have created waves in the atmosphere,” said Vagasky.</p>
+                        <p>Las comunidades de distintas etnias y paises extranjeros tambien tienen un lugar importante aqui, mas abajo se representa la composicion de la poblacion por etnia</p>
 
-                        <p>Reuters used data from a ground-based global lightning detection network owned and operated by Vaisala, dubbed GLD360, to visualize the lightning activity during the eruption. <em>Los párrafos ofrecen una introducción al tema. Después de la introducción, lo lógico debería ser incluir un gráfico.</em></p>
+                        <p>La ciudad de Nueva York o NYC es por lo tanto un foco importante cuando pensamos en la lucha por terminar con la discriminaciòn y los crimenes de Odio, el respeto de los derechos humanos.</p>
 
                     </div>
                     <div class="col-md-10 mx-auto my-5">
 
-                        <canvas id="miGrafico" width="400" height="200"></canvas>
+                        <canvas id="Grafico1" width="400" height="200"></canvas>
 
                     </div>
                     <div class="col-md-6 mx-auto">
-
-                        <p><em>Ahora se puede complementar la lectura del gráfico de arriba y buscar una conexión con que sigue abajo</em>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris molestie metus in mi pellentesque, eu malesuada diam ultricies. Mauris ultrices, ligula nec vulputate bibendum, nisi neque ultricies sem, eget volutpat magna nulla quis libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent nec est ex. Nulla nunc elit, mattis vel justo ac, iaculis interdum tellus.</p>
-
+                        <p>Respecto a los grupos a los que se orientan estos ataques, los informes de la policia entregan la siguiente informacion</p>
+                        </div>
+                    
+                       <div class="col-md-10 mx-auto my-5">
+                        <canvas id="Grafico2" width="400" height="200"></canvas>
                     </div>
+                    
+                    <div class="col-md-6 mx-auto">
+                        <p>Si caracterizamos a las personas responsables de estos crimenes, podemos saber su edad</p>
+                        </div>
+                    
+                       <div class="col-md-10 mx-auto my-5">
+                        <canvas id="Grafico3" width="400" height="200"></canvas>
+                    </div>
+                    
+                    <div class="col-md-6 mx-auto">
+                        <p>Sus caracteristicas raciales</p>
+                        </div>
+                    
+                       <div class="col-md-10 mx-auto my-5">
+                        <canvas id="Grafico4" width="400" height="200"></canvas>
+                    </div>
+                    
+                    <div class="col-md-6 mx-auto">
+                        <p>Y, por ultimo, su genero </p>
+                        </div>
+                    
+                       <div class="col-md-10 mx-auto my-5">
+                        <canvas id="Grafico5" width="400" height="200"></canvas>
+                    </div>
+                    
                     <div class="col-md-10 mx-auto my-5">
 
                         <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-6 g-3 text-center" id="aqui"></div>
@@ -191,7 +218,7 @@
                 });
                 //gráficar
                 //poblacion nueva york
-                new Chart(document.getElementById("primerCan").getContext("2d"), {
+                new Chart(document.getElementById("Grafico1").getContext("2d"), {
                     type: "pie",
                     data: {
                         labels: ["blanco", "latino", "afroamericano", "asiatico", "nativo americano", "dos o mas grupos"],
@@ -205,7 +232,7 @@
                     },
                 });
                 //victimas
-                new Chart(document.getElementById("tercerCan").getContext("2d"), {
+                new Chart(document.getElementById("Grafico2").getContext("2d"), {
                     type: "bar",
                     data: {
                         labels: ["personas asiaticas", "personas negras", "mujeres", "personas musulmanes", "personas judias", "personas lgbt", "personas blancas", "Otros"],
