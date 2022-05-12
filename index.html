@@ -152,7 +152,7 @@
                 //consultando en cada elemento del arreglo
                 data.forEach((d) => {
                     //genero
-                    if (d.Gender == "male") {
+                    if (d.Gender == "MALE") {
                         losHombres = losHombres + 1;
                     } else {
                         lasMujeres = lasMujeres + 1;
@@ -235,7 +235,7 @@
                 new Chart(document.getElementById("Grafico2").getContext("2d"), {
                     type: "bar",
                     data: {
-                        labels: ["personas asiaticas", "personas negras", "mujeres", "personas musulmanes", "personas judias", "personas lgbt", "personas blancas", "Otros"],
+                        labels: ["personas asiaticas", "personas negras", "mujeres", "personas musulmanas", "personas judias", "personas lgbt", "personas blancas", "Otros"],
                         datasets: [
                             {
                                 data: [lesAapi, lesAfroamericanos, lesMujeres, lesMusulmanes, lesJudios, lesLGBT, lesBlancos, lesOtres],
