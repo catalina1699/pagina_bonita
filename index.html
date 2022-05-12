@@ -239,7 +239,7 @@
                         datasets: [
                             {
                                 data: [lesAapi, lesAfroamericanos, lesMujeres, lesMusulmanes, lesJudios, lesLGBT, lesBlancos, lesOtres],
-                                label: "Grupos de personas atacadas",
+                                label: "personas atacadas de este grupo",
                                 backgroundColor: ["#728FCE", "#4863A0", "#2B547E", "#36454F", "#29465B", "#2B3856", "#123456", "#151B54"],
                             },
                         ],
@@ -251,7 +251,68 @@
                         },
                     },
                 });
+                //edad victimarios
+                   new Chart(document.getElementById("Grafico3").getContext("2d"), {
+                    type: "bar",
+                    data: {
+                        labels: ["adolescentes", "veinteañeros", "treintañeros", "cuarentañeros", "cincuentañeros", "sexagenarios", "septagenario"],
+                        datasets: [
+                            {
+                                data: [menorDeEdad, veinteAnos, treintaAnos, cuarentaAnos, cincuentaAnos, sesentaAnos, setentaAnos],
+                                label: "Atacantes de esta edad",
+                                backgroundColor: ["#728FCE", "#4863A0", "#2B547E", "#36454F", "#29465B", "#2B3856", "#123456"],
+                            },
+                        ],
+                    },
+                    options: {
+                        animation: false,
+                        layout: {
+                            padding: 10,
+                        },
+                    },
+                });
+                      //etnia victimarios
+                   new Chart(document.getElementById("Grafico4").getContext("2d"), {
+                    type: "bar",
+                    data: {
+                        labels: ["blancos", "negros", "latinos", "asiaticos"],
+                        datasets: [
+                            {
+                                data: [blancx, negrx, latinx, asiaticx],
+                                label: "atacantes con esta caracteristica",
+                                backgroundColor: ["#728FCE", "#4863A0", "#2B547E", "#36454F"],
+                            },
+                        ],
+                    },
+                    options: {
+                        animation: false,
+                        layout: {
+                            padding: 10,
+                        },
+                    },
+                });
+                      //genero victimarios
+                   new Chart(document.getElementById("Grafico5").getContext("2d"), {
+                    type: "bar",
+                    data: {
+                        labels: ["masculino", "femenino"],
+                        datasets: [
+                            {
+                                data: [losHombres, lasMujeres],
+                                label: "Atacantes de este genero",
+                                backgroundColor: ["#728FCE", "#4863A0"],
+                            },
+                        ],
+                    },
+                    options: {
+                        animation: false,
+                        layout: {
+                            padding: 10,
+                        },
+                    },
+                });
             }
+            
             visualizacion().catch((error) => console.error(error));
         </script>
 
